@@ -1,0 +1,94 @@
+html {
+    font-family: "Chakra Petch", sans-serif;
+    font-size: 13px;
+}
+
+/* Tooltip container */
+.tooltip {
+    position: relative;
+    display: inline-block;
+}
+
+/* Tooltip text */
+.tooltip .tooltiptext {
+    width: 250px;
+    bottom: 100%;
+    left: 50%;
+    margin-left: -125px; /* Use half of the width (120/2 = 60), to center the tooltip */
+    visibility: hidden;
+    width: 280px;
+    background-color: rgb(255, 255, 255);
+    color: #deb1b8;
+    text-align: center;
+    padding: 20px 20px;
+    border-radius: 20px;
+ 
+    /* Position the tooltip text - see examples below! */
+    position: absolute;
+    z-index: 1;
+    opacity: 0;
+    transition: opacity 0.5s;
+}
+
+
+/* Show the tooltip text when you mouse over the tooltip container */
+.tooltip:hover .tooltiptext {
+    visibility: visible;
+    opacity: 1;
+}
+
+body {
+    background-color: #2b2f3b;
+}
+
+.container {
+    display: flex;
+    justify-content: center;  
+    align-items: center;      
+    height: 100vh;            
+    margin: 0;                
+    padding: 0;               
+}
+.box {
+    background-color: #20273a;
+    padding: 20px;
+    padding-left: 50px;
+    width: 20%;               
+    max-width: 800px;
+    min-width: 300px;          
+    box-sizing: border-box;   
+    color: #deb1b8;               
+    text-align: left;       
+    border-radius: 15%;
+    line-height: 4em;
+    word-spacing: 0.8em;
+    border: 3px solid #deb1b8;
+}
+
+#declarator {
+    color: white;
+}
+
+#symbol {
+    color: #f2db70;
+}
+
+#indent {
+   text-indent: 10%;
+   color: #c3edd7;
+}
+
+#indentProjects {
+    text-indent: 14%;
+    color: #c3edd7;
+}
+
+.box a {
+    color: #c3edd7;
+    text-decoration:none;
+}
+
+.links a {
+    color:#deb1b8;
+}
+
