@@ -4,7 +4,7 @@ html {
 }
 
 body {
-    height: 90vh;
+    margin: 25vh auto;
     display: flex;
     align-items: center;
     justify-content: center;
