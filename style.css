@@ -14,8 +14,10 @@ body {
 
 .text {
     border: 5px solid #DCEAB2;
-    padding: 2vh;
-    border-radius: 5%;
+    padding: 3vh;
+    padding-left: 5vh;
+    padding-right: 5vh;
+    border-radius: 7%;
 }
 
 #info1 {
