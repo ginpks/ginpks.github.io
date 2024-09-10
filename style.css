@@ -3,92 +3,150 @@ html {
     font-size: 13px;
 }
 
-/* Tooltip container */
-.tooltip {
-    position: relative;
-    display: inline-block;
-}
-
-/* Tooltip text */
-.tooltip .tooltiptext {
-    width: 250px;
-    bottom: 100%;
-    left: 50%;
-    margin-left: -125px; /* Use half of the width (120/2 = 60), to center the tooltip */
-    visibility: hidden;
-    width: 280px;
-    background-color: rgb(255, 255, 255);
-    color: #deb1b8;
-    text-align: center;
-    padding: 20px 20px;
-    border-radius: 20px;
- 
-    /* Position the tooltip text - see examples below! */
-    position: absolute;
-    z-index: 1;
-    opacity: 0;
-    transition: opacity 0.5s;
-}
-
-
-/* Show the tooltip text when you mouse over the tooltip container */
-.tooltip:hover .tooltiptext {
-    visibility: visible;
-    opacity: 1;
-}
-
 body {
-    background-color: #2b2f3b;
-}
-
-.container {
+    height: 90vh;
     display: flex;
-    justify-content: center;  
-    align-items: center;      
-    height: 100vh;            
-    margin: 0;                
-    padding: 0;               
-}
-.box {
-    background-color: #20273a;
-    padding: 20px;
-    padding-left: 50px;
-    width: 20%;               
-    max-width: 800px;
-    min-width: 300px;          
-    box-sizing: border-box;   
-    color: #deb1b8;               
-    text-align: left;       
-    border-radius: 15%;
-    line-height: 4em;
-    word-spacing: 0.8em;
-    border: 3px solid #deb1b8;
+    align-items: center;
+    justify-content: center;
+    position: relatve;
+    background-color: #151e3f;
 }
 
-#declarator {
+.text {
+    border: 5px solid #DCEAB2;
+    padding: 2vh;
+    border-radius: 5%;
+}
+
+#info1 {
+    margin-left: 30px;
+    -webkit-font-smoothing: antialiased;
+    background: linear-gradient(to right,
+    #8E3B46 5%, #DCEAB2 10%, #50D8D7 20%);
+    background-position: 0;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-weight: bold;
+    animation: move 15s infinite linear;
+    animation-fill-mode: forwards;
+}
+
+#info2 {
+    margin-left: 30px;
+    -webkit-font-smoothing: antialiased;
+    background: linear-gradient(to right,
+    #50D8D7 10%, #8E3B46 20%, #DCEAB2 20%);
+    background-position: 0;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-weight: bold;
+    animation: move 15s infinite linear;
+    animation-fill-mode: forwards;
+}
+
+#info3 {
+    margin-left: 30px;
+    -webkit-font-smoothing: antialiased;
+    background: linear-gradient(to right,
+    #50D8D7 5%, #DCEAB2 20%, #8E3B46 20%);
+    background-position: 0;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-weight: bold;
+    animation: move 15s infinite linear;
+    animation-fill-mode: forwards;
+}
+
+@keyframes move {
+    0%{
+        background-position: 0;
+    }
+    50%{
+        background-position: 180px;
+    }
+    100%{
+        background-position: 400px;
+    }
+}
+
+#name {
+    font-size: 40px;
+    color: #8E3B46;
+}
+
+#syntax {
     color: white;
 }
 
-#symbol {
-    color: #f2db70;
-}
-
-#indent {
-   text-indent: 10%;
-   color: #c3edd7;
-}
-
-#indentProjects {
-    text-indent: 14%;
-    color: #c3edd7;
-}
-
-.box a {
-    color: #c3edd7;
+a {
     text-decoration:none;
 }
 
-.links a {
-    color:#deb1b8;
-}
+.tooltip {
+    position: relative;
+    display: inline-block;
+  }
+  
+  .tooltip .tooltiptext1 {
+    visibility: hidden;
+    width: 400px;
+    min-width: 100px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-right: 20px;
+    padding-left: 20px;
+    background-color: #415396;
+    color: #DCEAB2;
+    text-align: center;
+    font-size: large;
+    border-radius: 10px;
+    bottom: 100%;
+    left: 50%;
+    margin-left: -160px;
+
+  
+    /* Position the tooltip */
+    position: absolute;
+    z-index: 1;
+    opacity: 0;
+    transition: opacity 0.2s
+  }
+
+  .tooltip .tooltiptext2 {
+    visibility: hidden;
+    width: 150px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-right: 10px;
+    padding-left: 10px;
+    background-color: #415396;
+    color: #DCEAB2;
+    text-align: center;
+    font-size: large;
+    border-radius: 10px;
+    bottom: 100%;
+    left: 50%;
+    margin-left: -50px;
+  
+    /* Position the tooltip */
+    position: absolute;
+    z-index: 1;
+    opacity: 0;
+    transition: opacity 0.2s
+  }
+  
+  .tooltip:hover .tooltiptext1 {
+    visibility: visible;
+    opacity: 1;
+  }
+
+  .tooltip:hover .tooltiptext2 {
+    visibility: visible;
+    opacity: 1;
+  }
+
+
 
