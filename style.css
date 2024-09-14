@@ -70,7 +70,7 @@ body {
 }
 
 #links:hover {
-    color: white;
+    color: #db82d7;
 }
 
 #ig {
@@ -193,4 +193,5 @@ a {
     align-items: center;
     gap: 5px;
   }
+  
 
