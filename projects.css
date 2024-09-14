@@ -1,0 +1,23 @@
+html {
+    font-family: "Chakra Petch", sans-serif;
+    font-size: 13px;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    margin: 25vh auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relatve;
+    background-color: #151e3f;
+}
+
+.text {
+    border: 2px solid #DCEAB2;
+    padding: 10vh;
+    padding-left: 10vh;
+    padding-right: 10vh;
+    border-radius: 7%;
+}

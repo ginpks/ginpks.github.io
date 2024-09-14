@@ -64,6 +64,15 @@ body {
     animation-fill-mode: forwards;
 }
 
+#links {
+    text-decoration: none;
+    color:#DCEAB2;
+}
+
+#links:hover {
+    color: white;
+}
+
 @keyframes move {
     0%{
         background-position: 0;
