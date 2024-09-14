@@ -6,7 +6,7 @@ html {
 }
 
 body {
-    margin: 20vh auto;
+    margin: 10vh auto;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -25,12 +25,13 @@ body {
 }
 
 li {
-    font-size: 25px;
+    font-size: 20px;
     color: #DCEAB2;
+    padding: 30px;
 }
 
 ul {
-    line-height: 60px;
+    line-height: 50px;
 }
 
 #projects {
