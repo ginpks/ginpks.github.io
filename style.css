@@ -123,20 +123,23 @@ a {
   
   .tooltip .tooltiptext1 {
     visibility: hidden;
-    width: 400px;
+    width: 375px;
     min-width: 100px;
-    padding-top: 20px;
-    padding-bottom: 20px;
-    padding-right: 20px;
-    padding-left: 20px;
+    padding-top: 25px;
+    padding-bottom: 25px;
+    padding-right: 25px;
+    padding-left: 25px;
     background-color: #415396;
     color: #DCEAB2;
     text-align: center;
     font-size: large;
-    border-radius: 10px;
+    border-radius: 30px;
     bottom: 100%;
     left: 50%;
     margin-left: -160px;
+    border-style: solid;
+    border-width: 2px;
+    border-color: white;
 
   
     /* Position the tooltip */
@@ -149,18 +152,21 @@ a {
   .tooltip .tooltiptext2 {
     visibility: hidden;
     width: 150px;
-    padding-top: 10px;
-    padding-bottom: 10px;
+    padding-top: 3px;
+    padding-bottom: 3px;
     padding-right: 10px;
     padding-left: 10px;
     background-color: #415396;
     color: #DCEAB2;
     text-align: center;
     font-size: large;
-    border-radius: 10px;
+    border-radius: 30px;
     bottom: 100%;
     left: 50%;
     margin-left: -50px;
+    border-style: solid;
+    border-width: 2px;
+    border-color: white;
   
     /* Position the tooltip */
     position: absolute;
@@ -168,6 +174,7 @@ a {
     opacity: 0;
     transition: opacity 0.2s
   }
+
   
   .tooltip:hover .tooltiptext1 {
     visibility: visible;
