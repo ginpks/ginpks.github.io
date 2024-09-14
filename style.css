@@ -65,7 +65,7 @@ body {
 }
 
 #links {
-    text-decoration: none;
+    text-decoration: dotted;
     color:#DCEAB2;
 }
 
@@ -73,6 +73,18 @@ body {
     color: white;
 }
 
+#ig {
+    text-decoration: none;
+    color: #db82d7;
+}
+
+#icon {
+    vertical-align: middle;
+}
+
+#ig:hover {
+    color: white;
+}
 @keyframes move {
     0%{
         background-position: 0;
@@ -84,6 +96,12 @@ body {
         background-position: 400px;
     }
 }
+
+@keyframes cursor-blink {
+    0% {
+      opacity: 0;
+    }
+  }
 
 #name {
     font-size: 40px;
@@ -161,5 +179,18 @@ a {
     opacity: 1;
   }
 
+  #blink::after {
+    content: "";
+    width: 3px;
+    height: 23px;
+    background: #50D8D7;
+    display: inline-block;
+    animation: cursor-blink 1.4s steps(2) infinite;
+  }
 
+  #blink {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+  }
 
