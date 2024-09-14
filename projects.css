@@ -6,7 +6,7 @@ html {
 }
 
 body {
-    margin: 25vh auto;
+    margin: 20vh auto;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -15,9 +15,26 @@ body {
 }
 
 .text {
-    border: 2px solid #DCEAB2;
-    padding: 10vh;
+    border: 1px solid #db82d7;
+    padding: 5vh;
     padding-left: 10vh;
     padding-right: 10vh;
-    border-radius: 7%;
+    border-radius: 5%;
+    margin-left: 20vh;
+    margin-right: 20vh;
+}
+
+li {
+    font-size: 25px;
+    color: #DCEAB2;
+}
+
+ul {
+    line-height: 60px;
+}
+
+#projects {
+    font-weight: bold;
+    color: white;
+
 }
