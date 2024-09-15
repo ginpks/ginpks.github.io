@@ -16,9 +16,10 @@ body {
 
 .text {
     border: 2px solid #DCEAB2;
-    padding: 2vh;
+    padding: 1vh;
     padding-left: 5vh;
     padding-right: 5vh;
+    padding-bottom: 3vh;
     border-radius: 50px;
     margin-left: 20vh;
     margin-right: 20vh;
@@ -27,15 +28,50 @@ body {
 li {
     font-size: 20px;
     color: white;
-    padding: 30px;
+    padding: 25px;
 }
 
 ul {
-    line-height: 50px;
+    line-height: 40px;
 }
 
 #projects {
     font-weight: bold;
     color: #db82d7;
 
+}
+
+
+#arrow {
+    color: white;
+    display: flex;
+    position: relative;
+    font-size: 50px;
+    margin-left: 25px;
+}
+
+
+#back {
+    -webkit-font-smoothing: antialiased;
+    background: linear-gradient(to right,
+    #db82d7 3%, #DCEAB2 30%, #50D8D7 20%);
+    background-position: 0;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-weight: bold;
+    animation: move 10s infinite linear;
+    animation-fill-mode: forwards;
+}
+
+@keyframes move {
+    0%{
+        background-position: 0;
+    }
+    50%{
+        background-position: 180px;
+    }
+    100%{
+        background-position: 400px;
+    }
 }
