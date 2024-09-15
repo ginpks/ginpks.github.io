@@ -55,6 +55,10 @@ ul {
     margin-left: 20px;
 }
 
+a {
+    text-decoration: none;
+}
+
 
 #back {
     -webkit-font-smoothing: antialiased;
