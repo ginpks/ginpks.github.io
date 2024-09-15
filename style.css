@@ -67,6 +67,7 @@ body {
 #links {
     text-decoration: dotted;
     color:#DCEAB2;
+    font-size: 22px;
 }
 
 #links:hover {
@@ -154,8 +155,8 @@ a {
     width: 150px;
     padding-top: 3px;
     padding-bottom: 3px;
-    padding-right: 10px;
-    padding-left: 10px;
+    padding-right: 3px;
+    padding-left: 3px;
     background-color: #415396;
     color: #DCEAB2;
     text-align: center;
@@ -163,7 +164,7 @@ a {
     border-radius: 30px;
     bottom: 100%;
     left: 50%;
-    margin-left: -50px;
+    margin-left: -65px;
     border-style: solid;
     border-width: 2px;
     border-color: white;
