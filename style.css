@@ -191,7 +191,7 @@ a {
     content: "";
     width: 3px;
     height: 23px;
-    background: #50D8D7;
+    background: #e7b5e5;
     display: inline-block;
     animation: cursor-blink 1.4s steps(2) infinite;
   }
@@ -202,4 +202,14 @@ a {
     gap: 5px;
   }
   
+  .tenor-gif-embed {
+    margin: 20px;
+
+  }
+
+  @media screen and (max-width = 375px) {
+    body {
+      margin: 10px;
+    }
+  }
 
