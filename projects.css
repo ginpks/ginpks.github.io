@@ -10,7 +10,6 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-    position: relatve;
     background-color: #151e3f;
 }
 
@@ -84,5 +83,8 @@ a {
         background-position: 400px;
     }
 }
+
+
+
 
 
