@@ -211,5 +211,10 @@ a {
     body {
       margin: 10px;
     }
+
+    .tooltip .tooltiptext1 {
+      width: 275px;
+      padding-left: -130px;
+    }
   }
 
