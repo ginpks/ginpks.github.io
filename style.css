@@ -234,7 +234,7 @@ a {
   }
 
   .projectText {
-    border: 2px solid #db82d7;
+    border: 2px solid #DCEAB2;
     padding: 1vh;
     padding-left: 5vh;
     padding-right: 5vh;
@@ -245,6 +245,7 @@ a {
     overflow-y: scroll; /* This enables vertical scrolling */
     max-height: 50vh;
     border-radius: 5px;
+    background-color:#0f162f
 
 }
 
@@ -316,7 +317,7 @@ a {
 
 /* Handle */
 ::-webkit-scrollbar-thumb {
-  background: #db82d7;
+  background: #DCEAB2;
   border-radius: 5px;
 }
 
@@ -324,8 +325,8 @@ ul {
   list-style:square;
   font-size: 18px;
   line-height: 3vh;
-  color:white;
-  background-color: #252e51;
+  color:#ebb2e8;
+  background-color:#151e3f;
   border-radius: 5px;
   padding-bottom: 15px;
   padding-top: 15px;
