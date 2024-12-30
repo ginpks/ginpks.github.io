@@ -145,7 +145,7 @@ a {
     color: #DCEAB2;
     text-align: center;
     font-size: large;
-    border-radius: 30px;
+    border-radius: 20px;
     bottom: 100%;
     left: 50%;
     margin-left: -160px;
@@ -172,7 +172,7 @@ a {
     color: #DCEAB2;
     text-align: center;
     font-size: large;
-    border-radius: 30px;
+    border-radius:20px;
     bottom: 100%;
     left: 50%;
     margin-left: -65px;
@@ -317,7 +317,7 @@ a {
 
 /* Handle */
 ::-webkit-scrollbar-thumb {
-  background: #ebb2e8;
+  background: white;
   border-radius: 5px;
 }
 
