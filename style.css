@@ -234,7 +234,7 @@ a {
   }
 
   .projectText {
-    border: 2px solid white;
+    border: 2px solid #db82d7;
     padding: 1vh;
     padding-left: 5vh;
     padding-right: 5vh;
@@ -324,7 +324,9 @@ ul {
   list-style:square;
   font-size: 18px;
   line-height: 3vh;
-  color:white;
+  color:#50D8D7;
+  background-color: #252e51;
+  border-radius: 5px;
 }
 
 
@@ -342,7 +344,7 @@ ul {
 }
 
 hr {
-  border-top: 2px solid #50D8D7;
+  border-top: 2px solid #DCEAB2;
   border-radius: 5px;
   width: 60vw
 }
