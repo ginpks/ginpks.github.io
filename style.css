@@ -234,7 +234,7 @@ a {
   }
 
   .projectText {
-    border: 2px solid #DCEAB2;
+    border: 4px solid white;
     padding: 1vh;
     padding-left: 5vh;
     padding-right: 5vh;
@@ -244,7 +244,7 @@ a {
     font-weight: light;
     overflow-y: scroll; /* This enables vertical scrolling */
     max-height: 50vh;
-    border-radius: 5px;
+    border-radius: 10px;
     background-color:#0f162f
 
 }
@@ -317,7 +317,7 @@ a {
 
 /* Handle */
 ::-webkit-scrollbar-thumb {
-  background: #DCEAB2;
+  background: #ebb2e8;
   border-radius: 5px;
 }
 
