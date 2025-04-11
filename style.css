@@ -298,16 +298,20 @@ hr {
 }
 
 .blogText {
-  display: grid; 
-  gap: 1rem;
+  display: grid;
+  /* Create columns based on a FIXED size, auto-filling as many as fit */
+  grid-template-columns: repeat(auto-fill, 300px); /* <--- FIXED SIZE HERE */
+  gap: 2rem; /* Adjust gap as desired */
+  justify-content: center; /* Center the grid items horizontally if there's extra space */
   box-shadow: 0 4px 15px rgba(239, 185, 236, 0.2);
-  padding: 3vh 3vh;  
+  padding: 1.5rem; /* Use rem for consistency */
   overflow-y: auto;
-  width: 60vw;
-  max-height: 70vh;
+  width: 50vw; /* Keep container width flexible */
+  max-height: 75vh;
   min-height: 65vh;
   border-radius: 10px;
-  color: white; 
+  color: white;
+  margin: auto; /* Center the container */ 
 }
 
 
@@ -374,17 +378,18 @@ a {
 
 
 .blog-card {
-  background-color: hsl(228, 45%, 13%); /* A slightly different background */
-  border: 0.5px solid #1b2850; /* Subtle border */
-  border-radius: 5px;       /* Rounded corners */
-  overflow: hidden;         /* Keep image corners rounded */
-  display: flex;            /* Use flexbox for internal layout */
-  flex-direction: column;   /* Stack image and content vertically */
-  color: white;             /* Ensure text is visible */
-  transition: transform 0.1s ease-in-out, box-shadow 0.1s ease-in-out; /* Hover effect */
-  min-height: 20vh;
-  margin-left: 0.5rem;
-  margin-right: 0.5rem;
+  background-color: hsl(228, 45%, 13%);
+  border: 0.5px solid #1b2850;
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+  color: white;
+  transition: transform 0.1s ease-in-out, box-shadow 0.1s ease-in-out;
+  width: 300px; 
+  height: 300px;
+  min-height: 200px;
+  min-width: 200px
+
 }
 
 .blog-card:hover {
@@ -413,7 +418,7 @@ a {
 }
 
 .blog-card p {
-  font-size: 1.5rem; /* Adjust paragraph font size */
+  font-size: 1.3rem; /* Adjust paragraph font size */
   line-height: 1.4;
   margin-bottom: 1rem;
   flex-grow: 1; /* Push link down */
@@ -472,6 +477,11 @@ a {
   width: 100%;
   height: 100%;
 
+}
+
+#api {
+  height: auto;
+  width: 100%;
 }
 
 #stars {
