@@ -290,7 +290,6 @@ hr {
   grid-template-columns: repeat(auto-fill, 250px); 
   gap: 2rem;  
   justify-content: space-evenly;
-  box-shadow: 0 4px 15px rgba(239, 185, 236, 0.2);
   padding: 1.5rem; 
   overflow-y: auto;
   width: 50vw; 
@@ -364,8 +363,7 @@ a {
 
 
 .blog-card {
-  background-color: hsl(228, 45%, 13%);
-  border: 0.5px solid #1b2850;
+  border: 1px solid #1c2345;
   border-radius: 5px;
   display: flex;
   flex-direction: column;
@@ -373,8 +371,7 @@ a {
   transition: transform 0.1s ease-in-out, box-shadow 0.1s ease-in-out;
   width: 250px; 
   height: 250px;
-
-
+  box-shadow: 0 4px 15px rgba(239, 185, 236, 0.1);
 }
 
 .blog-card:hover {
