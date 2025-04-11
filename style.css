@@ -176,6 +176,11 @@ a {
   @media screen and (max-width = 375px) {
     body {
       margin: 10px;
+      overflow: auto;
+    }
+
+    html {
+      overflow: auto;
     }
 
   }
