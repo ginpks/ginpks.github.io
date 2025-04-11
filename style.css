@@ -1,3 +1,6 @@
+
+
+
 html {
     font-family: "Chakra Petch", sans-serif;
     font-size: 13px;
@@ -13,6 +16,7 @@ body {
     background-color: #0d1328;
     position: relative
 }
+
 
 .text {
     border: 1px solid #efb9ec;
@@ -31,7 +35,7 @@ body {
 }
 .projects {
   position: fixed;
-  margin-top: 10vh;
+  top: 5vh;
 }
 
 #info1 {
@@ -173,22 +177,6 @@ a {
 
   }
 
-  @media screen and (max-width = 375px) {
-    body {
-      margin: 10px;
-      overflow: auto;
-    }
-
-    html {
-      overflow: auto;
-    }
-
-  }
-
-  .projects {
-    top: -5vh;
-  }
-
   .projectText {
     box-shadow: 0 4px 15px rgba(239, 185, 236, 0.1);
     padding: 1vh;
@@ -299,19 +287,17 @@ hr {
 
 .blogText {
   display: grid;
-  /* Create columns based on a FIXED size, auto-filling as many as fit */
-  grid-template-columns: repeat(auto-fill, 300px); /* <--- FIXED SIZE HERE */
-  gap: 2rem; /* Adjust gap as desired */
-  justify-content: center; /* Center the grid items horizontally if there's extra space */
+  grid-template-columns: repeat(auto-fill, 250px); 
+  gap: 2rem;  
+  justify-content: space-evenly;
   box-shadow: 0 4px 15px rgba(239, 185, 236, 0.2);
-  padding: 1.5rem; /* Use rem for consistency */
+  padding: 1.5rem; 
   overflow-y: auto;
-  width: 50vw; /* Keep container width flexible */
-  max-height: 75vh;
-  min-height: 65vh;
+  width: 50vw; 
+  max-height: 60vh;
+  min-height: 50vh;
   border-radius: 10px;
   color: white;
-  margin: auto; /* Center the container */ 
 }
 
 
@@ -385,10 +371,9 @@ a {
   flex-direction: column;
   color: white;
   transition: transform 0.1s ease-in-out, box-shadow 0.1s ease-in-out;
-  width: 300px; 
-  height: 300px;
-  min-height: 200px;
-  min-width: 200px
+  width: 250px; 
+  height: 250px;
+
 
 }
 
@@ -560,4 +545,48 @@ a {
   to {
       transform: translateY(-2000px);
   }
+}
+
+@media only screen and (max-width: 450px) {
+  .blogText {
+    margin: 0;
+    grid-template-columns: repeat(auto-fill, 150px); 
+  }
+  .blog-card {
+    width: 150px;
+    font-size: 0.5rem;
+  }
+}
+
+
+@media only screen and (max-width: 400px) {
+
+  .blogText {
+    margin: 0;
+    grid-template-columns: repeat(auto-fill, 150px); 
+  }
+  .blog-card {
+    width: 150px;
+    font-size: 0.5rem;
+  }
+
+  .information {
+    top: -10vh;
+    position: relative;
+  }
+
+  .projects {
+    position: fixed;
+    top: 3vh;
+  }
+
+  #arrow {
+    font-size: 4rem;
+  }
+
+  #arrow2 {
+    font-size: 4rem;
+  }
+
+
 }
