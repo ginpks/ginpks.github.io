@@ -17,12 +17,18 @@ body {
 .text {
     border: 1px solid #efb9ec;
     box-shadow: 0 4px 15px rgba(239, 185, 236, 0.2);
-    padding: 1vh;
-    padding-left: 5vh;
-    padding-right: 5vh;
+    padding-bottom: 1vh;
+    padding-left: 3vh;
+    padding-right: 3vh;
     border-radius: 7%;
 }
 
+.links {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+}
 .projects {
   position: fixed;
   margin-top: 10vh;
@@ -40,6 +46,7 @@ body {
     font-weight: bold;
     animation: move 15s infinite linear;
     animation-fill-mode: forwards;
+    padding-top: 1rem;
 }
 
 #info2 {
@@ -54,6 +61,7 @@ body {
     font-weight: bold;
     animation: move 15s infinite linear;
     animation-fill-mode: forwards;
+    padding-top: 1rem;
 }
 
 h2 {
@@ -62,7 +70,7 @@ h2 {
 
 
 
-#info3 {
+#info4 {
     margin-left: 30px;
     -webkit-font-smoothing: antialiased;
     background: linear-gradient(to right,
@@ -74,36 +82,25 @@ h2 {
     font-weight: bold;
     animation: move 15s infinite linear;
     animation-fill-mode: forwards;
+    padding-top: 1rem;
 }
 
-#info4 {
-  margin-left: 30px;
-  -webkit-font-smoothing: antialiased;
-  background: linear-gradient(to right,
-  #50D8D7 10%, #efb9ec 20%, #DCEAB2 60%);
-  background-position: 0;
-  background-clip: text;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  font-weight: bold;
-  animation: move 15s infinite linear;
-  animation-fill-mode: forwards;
-}
 
 #links {
-    text-decoration: dotted;
-    color:#DCEAB2;
-    font-size: 22px;
+  text-decoration: dotted;
+  color: #ffffff;
+  font-size: 22px;
 }
 
 #links:hover {
-    color: #efb9ec;
+  color:#efb9ec;
 }
 
 #ig {
-    text-decoration: none;
     color: #efb9ec;
 }
+
+
 
 #icon {
     vertical-align: middle;
@@ -137,80 +134,13 @@ h2 {
 
 #syntax {
     color: white;
+    padding-top: 1rem;
 }
 
 a {
     text-decoration:none;
 }
 
-.tooltip {
-    position: relative;
-    display: inline-block;
-  }
-  
-  .tooltip .tooltiptext1 {
-    visibility: hidden;
-    width: 450px;
-    padding-top: 25px;
-    padding-bottom: 25px;
-    padding-right: 25px;
-    padding-left: 25px;
-    background-color: #1d2850;
-    color: white;
-    text-align: center;
-    font-size: large;
-    border-radius: 15px;
-    bottom: 100%;
-    left: 50%;
-    margin-left: -180px;
-    border-style: solid;
-    border-width: 2px;
-    border-color: rgb(255, 255, 255);
-
-  
-    /* Position the tooltip */
-    position: absolute;
-    z-index: 1;
-    opacity: 0;
-    transition: opacity 0.4s
-  }
-
-  .tooltip .tooltiptext2 {
-    visibility: hidden;
-    width: 150px;
-    padding-top: 3px;
-    padding-bottom: 3px;
-    padding-right: 3px;
-    padding-left: 3px;
-    background-color: #1d2850;
-    color: #DCEAB2;
-    text-align: center;
-    font-size: large;
-    border-radius:20px;
-    bottom: 100%;
-    left: 50%;
-    margin-left: -65px;
-    border-style: solid;
-    border-width: 2px;
-    border-color: white;
-  
-    /* Position the tooltip */
-    position: absolute;
-    z-index: 1;
-    opacity: 0;
-    transition: opacity 0.2s
-  }
-
-  
-  .tooltip:hover .tooltiptext1 {
-    visibility: visible;
-    opacity: 1;
-  }
-
-  .tooltip:hover .tooltiptext2 {
-    visibility: visible;
-    opacity: 1;
-  }
 
   #blink::after {
     content: "";
@@ -237,10 +167,6 @@ a {
       margin: 10px;
     }
 
-    .tooltip .tooltiptext1 {
-      width: 275px;
-      padding-left: -130px;
-    }
   }
 
   .projects {
@@ -248,8 +174,7 @@ a {
   }
 
   .projectText {
-    border: 2px solid #efb9ec;
-    box-shadow: 0 4px 15px rgba(239, 185, 236, 0.2);
+    box-shadow: 0 4px 15px rgba(239, 185, 236, 0.1);
     padding: 1vh;
     padding-left: 5vh;
     padding-right: 5vh;
@@ -260,7 +185,6 @@ a {
     overflow-y: scroll; /* This enables vertical scrolling */
     max-height: 70vh;
     border-radius: 10px;
-    background-color:#111934
 
 }
 
@@ -294,19 +218,6 @@ a {
 }
 
 
-#back {
-    -webkit-font-smoothing: antialiased;
-    background: linear-gradient(to right,
-    #efb9ec 10%, #DCEAB2 20%, #50D8D7 90%);
-    background-position: 0;
-    background-clip: text;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    font-weight: bold;
-    animation: move 10s infinite linear;
-    animation-fill-mode: forwards;
-}
-
 @keyframes move {
     0%{
         background-position: 0;
@@ -337,30 +248,15 @@ ul {
   font-size: 18px;
   line-height: 3vh;
   color:white;
-  background-color:#19244a;
   border-radius: 5px;
   padding-bottom: 15px;
   padding-top: 15px;
-}
-
-
-#info4 {
-  -webkit-font-smoothing: antialiased;
-  background: linear-gradient(to right,
-  #efb9ec 10%, #DCEAB2 20%, #50D8D7 60%);
-  background-position: 0;
-  background-clip: text;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  font-weight: bold;
-  animation: move 15s infinite linear;
-  animation-fill-mode: forwards;
+  background-color: #141c35;
 }
 
 
 hr {
-  border-top: 2px solid #efb9ec;
-  border-radius: 5px;
+  border-top: 1px solid #ffffff;
   width: 60vw
 }
 
@@ -387,16 +283,14 @@ hr {
 
 .blogText {
   display: grid; 
-  gap: 2rem;
-  border: 2px solid #efb9ec;
+  gap: 1rem;
   box-shadow: 0 4px 15px rgba(239, 185, 236, 0.2);
-  padding: 5vh 3vw;  
-  overflow-y: scroll;
+  padding: 3vh 3vh;  
+  overflow-y: auto;
   width: 60vw;
   max-height: 70vh;
   min-height: 65vh;
   border-radius: 10px;
-  background-color:#0d1328;
   color: white; 
 }
 
@@ -408,6 +302,12 @@ hr {
 }
 
 #arrow2 {
+  display: flex;
+  font-size: 5em;
+  top: 0;
+}
+
+#arrow3 {
   display: flex;
   font-size: 5em;
   top: 0;
@@ -426,7 +326,12 @@ a {
 }
 
 
-#back, #back2 {
+#back3:hover{
+  cursor:pointer;
+}
+
+
+#back, #back2, #back3 {
     -webkit-font-smoothing: antialiased;
     background: linear-gradient(to right,
     #efb9ec 10%, #DCEAB2 20%, #50D8D7 90%);
@@ -452,22 +357,8 @@ a {
 }
 
 
-#info4 {
-  -webkit-font-smoothing: antialiased;
-  background: linear-gradient(to right,
-  #efb9ec 10%, #DCEAB2 20%, #50D8D7 60%);
-  background-position: 0;
-  background-clip: text;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  font-weight: bold;
-  animation: move 15s infinite linear;
-  animation-fill-mode: forwards;
-}
-
-
 .blog-card {
-  background-color: hsl(229, 46%, 14%); /* A slightly different background */
+  background-color: hsl(228, 45%, 13%); /* A slightly different background */
   border: 0.5px solid #1b2850; /* Subtle border */
   border-radius: 5px;       /* Rounded corners */
   overflow: hidden;         /* Keep image corners rounded */
@@ -518,6 +409,35 @@ a {
   left: 0px;
   bottom: 0px;
   width: 100%;
+}
+
+
+.about_me {
+  top: 15vh;
+  position:fixed;
+  margin: 0;
+}
+
+.aboutMeText {
+  box-shadow: 0 4px 15px rgba(239, 185, 236, 0.1);
+  padding: 4vh;
+  padding-bottom: 3vh;
+  color: white;
+  width: 40vw;
+  max-width: 50vw;
+  margin: auto;
+  border-radius: 20px;
+  font-size: 0.8rem;
+  line-height: 2.5rem;
+  min-height: 30vh;
+  max-height: 40vh;
+  overflow: auto;
+}
+
+
+.backArrow3 {
+  width: 30vw;
+  font-size: 0.8rem;
 }
 
 .bg-animation {
