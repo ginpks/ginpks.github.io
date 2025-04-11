@@ -10,7 +10,7 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: #111934;
+    background-color: #0d1328;
     position: relative
 }
 
@@ -392,11 +392,11 @@ hr {
   box-shadow: 0 4px 15px rgba(239, 185, 236, 0.2);
   padding: 5vh 3vw;  
   overflow-y: scroll;
-  width: 70vw;
+  width: 60vw;
   max-height: 70vh;
   min-height: 65vh;
   border-radius: 10px;
-  background-color:#111934;
+  background-color:#0d1328;
   color: white; 
 }
 
@@ -467,15 +467,17 @@ a {
 
 
 .blog-card {
-  background-color: #161e3d; /* A slightly different background */
-  border: 0.5px solid #233469; /* Subtle border */
-  border-radius: 8px;       /* Rounded corners */
+  background-color: hsl(229, 46%, 14%); /* A slightly different background */
+  border: 0.5px solid #1b2850; /* Subtle border */
+  border-radius: 5px;       /* Rounded corners */
   overflow: hidden;         /* Keep image corners rounded */
   display: flex;            /* Use flexbox for internal layout */
   flex-direction: column;   /* Stack image and content vertically */
   color: white;             /* Ensure text is visible */
   transition: transform 0.1s ease-in-out, box-shadow 0.1s ease-in-out; /* Hover effect */
   min-height: 20vh;
+  margin-left: 0.5rem;
+  margin-right: 0.5rem;
 }
 
 .blog-card:hover {
