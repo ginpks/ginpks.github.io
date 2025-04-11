@@ -460,6 +460,11 @@ a {
   width: 100%;
 }
 
+#food {
+  height: 80%;
+  width: 100%;
+}
+
 #stars {
   width: 0.5px;
   height: 0.5px;
