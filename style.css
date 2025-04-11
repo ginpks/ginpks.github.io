@@ -1,6 +1,3 @@
-
-
-
 html {
     font-family: "Chakra Petch", sans-serif;
     font-size: 13px;
@@ -14,9 +11,8 @@ body {
     align-items: center;
     justify-content: center;
     background-color: #0d1328;
-    position: relative
+    position: relative;
 }
-
 
 .text {
     border: 1px solid #efb9ec;
@@ -291,15 +287,13 @@ hr {
   gap: 2rem;  
   justify-content: space-evenly;
   padding: 1.5rem; 
-  overflow-y: auto;
   width: 50vw; 
   max-height: 60vh;
   min-height: 50vh;
   border-radius: 10px;
   color: white;
+  overflow: auto;
 }
-
-
 
 .blog {
   position: fixed;
@@ -364,7 +358,7 @@ a {
 
 .blog-card {
   border: 1px solid #1c2345;
-  border-radius: 5px;
+  border-radius: 10px;
   display: flex;
   flex-direction: column;
   color: white;
